@@ -1,0 +1,109 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: #0b1f3a;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+#home {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #eaf2ff;
+}
+
+#home h1 {
+    font-size: 56px;
+    margin: 20px 0 10px;
+}
+
+#home h2 {
+    margin-bottom: 30px;
+}
+
+#home a {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 10px 20px;
+    background-color: #0b1f3a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+#matches {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#matches > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.match-card {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.match-card h3 {
+    margin-bottom: 20px;
+}
+
+.match-card p {
+    margin: 10px;
+}
+
+.match-card button {
+    padding: 10px 25px;
+    background-color: #0b1f3a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.match-card button:hover {
+    background-color: #163b6d;
+}
+@media (max-width: 700px) {
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    #home h1 {
+        font-size: 42px;
+    }
+
+    #home h2 {
+        font-size: 22px;
+    }
+
+    #matches > div {
+        grid-template-columns: 1fr;
+    }
+
+    .match-card {
+        width: 100%;
+    }
+}
