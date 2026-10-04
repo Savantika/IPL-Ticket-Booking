@@ -59,3 +59,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutText = document.getElementById("demo");
+
+    if (aboutText) {
+        aboutText.textContent =
+            "IPL 2026 brings together the best cricket teams and players from around the world " +
+            "for an action-packed season full of thrilling matches, star performances, and " +
+            "unforgettable moments. Book your tickets now and be part of the excitement live " +
+            "at the stadium!";
+    }
+});
